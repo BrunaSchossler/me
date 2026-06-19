@@ -15,3 +15,23 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((element) => {
   observer.observe(element);
 });
+
+const copyEmail = async (email, trigger) => {
+  try {
+    await navigator.clipboard.writeText(email);
+    const originalText = trigger.textContent;
+    trigger.textContent = "Copied";
+
+    window.setTimeout(() => {
+      trigger.textContent = originalText;
+    }, 1600);
+  } catch {
+    window.prompt("Copy Bruna's email address:", email);
+  }
+};
+
+document.querySelectorAll("[data-copy-email]").forEach((element) => {
+  element.addEventListener("click", () => {
+    copyEmail(element.dataset.copyEmail, element);
+  });
+});

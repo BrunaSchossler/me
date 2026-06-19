@@ -58,7 +58,12 @@
               <li><span>Phone</span><a href="tel:15873788839">(587) 378-8839</a></li>
               <li>
                 <span>Email</span>
-                <a href="mailto:brubidalbem@gmail.com">brubidalbem@gmail.com</a>
+                <a
+                  href="mailto:brubidalbem@gmail.com"
+                  data-email-link
+                  data-email="brubidalbem@gmail.com"
+                  >brubidalbem@gmail.com</a
+                >
               </li>
             </ul>
             <div class="profile-pillars">
@@ -71,6 +76,9 @@
                 <p>Legal documentation and process review</p>
               </div>
             </div>
+            <button class="copy-link" type="button" data-copy-email="brubidalbem@gmail.com">
+              Copy Email Address
+            </button>
           </aside>
         </div>
       </header>
@@ -262,9 +270,21 @@
             handling are essential.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="mailto:brubidalbem@gmail.com">Email Bruna</a>
+            <a
+              class="button primary"
+              href="mailto:brubidalbem@gmail.com"
+              data-email-link
+              data-email="brubidalbem@gmail.com"
+              >Email Bruna</a
+            >
             <a class="button secondary" href="tel:15873788839">Call Bruna</a>
           </div>
+          <p class="contact-note">
+            If email does not open on your desktop, copy the address:
+            <button class="inline-copy" type="button" data-copy-email="brubidalbem@gmail.com">
+              brubidalbem@gmail.com
+            </button>
+          </p>
         </section>
       </main>
     </div>

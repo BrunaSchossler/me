@@ -283,6 +283,29 @@ h3 {
   font-weight: 600;
 }
 
+.copy-link,
+.inline-copy {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.copy-link {
+  margin-top: 22px;
+  color: #f2e2be;
+  font-weight: 700;
+  text-align: left;
+}
+
+.copy-link:hover,
+.inline-copy:hover {
+  text-decoration: underline;
+}
+
 .profile-pillars {
   display: grid;
   gap: 18px;
@@ -439,6 +462,16 @@ h3 {
   text-align: center;
   background:
     linear-gradient(135deg, rgba(255, 252, 247, 0.95), rgba(247, 238, 222, 0.94));
+}
+
+.contact-note {
+  margin: 18px 0 0;
+  color: var(--muted);
+}
+
+.inline-copy {
+  color: var(--accent-deep);
+  font-weight: 700;
 }
 
 .reveal {
